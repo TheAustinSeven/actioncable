@@ -1,0 +1,13 @@
+Usage:
+    rails generate channel NAME
+
+Description:
+    Creates the Ruby and CoffeeScript files to implement an Action Cable
+    channel. Pass the channel name, either CamelCased or under_scored.
+
+Example:
+    rails generate channel InterestingName
+
+    Action Cable Channel with name InterestingName.
+        Channel:      app/channels/interesting_name_channel.rb
+        CoffeeScript: app/assets/javascripts/channels/interesting_name_channel.coffee

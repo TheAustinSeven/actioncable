@@ -1,0 +1,15 @@
+Usage:
+    rails generate action_cable:install
+
+Description:
+    Creates the Ruby, CoffeeScript, and Redis configuration files
+    to support Action Cable.
+
+Example:
+    rails generate action_cable:install
+
+    Necessary files to support Action Cable.
+        Application Cable: app/channels/application_cable/channel.rb
+                           app/channels/application_cable/connection.rb
+        CoffeeScript:      app/assets/javascripts/channels/interesting_name_channel.coffee
+        Redis config:      config/redis/cable.yml
