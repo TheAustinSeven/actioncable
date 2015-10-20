@@ -13,7 +13,7 @@ module ActionCable
         @log_tags = []
 
         $stderr.puts("hooplah")
-        if defined? ApplicationCable
+        if defined? ApplicationCable::Connection
           $stderr.puts("craziness")
           @connection_class  = ApplicationCable::Connection
         else
