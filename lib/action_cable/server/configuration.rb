@@ -11,7 +11,10 @@ module ActionCable
       def initialize
         @logger   = Rails.logger
         @log_tags = []
+
+        $stderr.puts("hooplah")
         if defined? ApplicationCable
+          $stderr.puts("craziness")
           @connection_class  = ApplicationCable::Connection
         else
           raise "ApplicationCable::Connection is not defined. Run 'rails generate action_cable:install' and try again."
